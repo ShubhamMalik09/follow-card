@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>follow page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="circle c1"></div>
+        <div class="circle c2"></div>
+        <div class="main">
+            <div class="img">
+                <img src="profile.jpg" width="150px">
+            </div>
+            <h2>Shubham Malik</h2>
+            <p>life->program</p>
+            <div class="buttons">
+                <button class="btn" onclick="openModal()">Share my profile</button>
+                <button class="btn">Follow me</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal">
+        <div class="modal-header">
+            <h1>Share My Profile</h1>
+            <div>
+                <p onclick="closeModal()"></p>
+            </div>
+        </div>
+
+        <div>
+            <h3>Share this via</h3>
+            <div class="icon-container">
+                <a href="#" class="icon" id="fb"></a>
+                <a href="#" class="icon" id="twitter"></a>
+                <a href="#" class="icon" id="insta"></a>
+                <a href="#" class="icon" id="whatsapp"></a>
+                <a href="#" class="icon" id="telegram"></a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="overlay" onclick="closeModal()"></div>
+    <script src="script.js"></script>
+</body>
+</html>
